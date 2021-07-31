@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car driving</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <style>
+      .body {
+        background-image: url("road.jpg");
+        height: 850px;
+        width: 1900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <button id="go">Go</button>
+    <button id="stop">Stop</button>
+    <button id="back">Back</button>
+
+    <div>
+      <div id="div1" style="position: absolute">
+        <img src="car.jpg" style="height: 150px; margin-top: 700px" />
+      </div>
+    </div>
+  </body>
+
+  <script>
+    $("#go").click(function () {
+      $("#div1").animate({ left: "1630px" }, 3000);
+    });
+
+    $("#stop").click(function () {
+      $("#div1").stop();
+    });
+
+    $("#back").click(function () {
+      $("#div1").animate({ left: "5" }, 3000);
+    });
+  </script>
+</html>

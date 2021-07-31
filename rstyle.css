@@ -1,0 +1,28 @@
+
+.body1{
+    background: url("Quora3.gif") no-repeat;
+    background-size: cover;
+    opacity: 10;
+}
+
+
+
+
+
+.formm{
+
+    border: 20px;;
+    width: 300px;
+    margin: auto;
+    background-color:cornsilk;
+    padding: 50px;
+    
+}
+
+.abc{
+
+    float: right;
+}
+.heading{
+    text-align: center;
+}

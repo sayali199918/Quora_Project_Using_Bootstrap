@@ -1,0 +1,42 @@
+.navbar-brand img{
+    /* padding: 0px 160px; */
+    /* margin: 0px 160px; */
+} 
+.navbar-brand
+{
+    /* padding: 10px 97px; */
+    /* margin: 0px 169px; */
+} 
+
+.nav-link
+{
+    /* padding: 8px 45px; */
+    /* margin: 0px -92px; */
+}
+.navbar {
+    /* height: 10%; */
+}
+.head{
+    /* max-width: 100%; */
+}
+/* body {
+    margin: 0;
+    font-family: system-ui;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+   */
+.nav-item :hover{
+    
+        color:#8f1f1b;
+        border-radius: 10px;
+        background-color: #8f1f1b;
+    
+
+}

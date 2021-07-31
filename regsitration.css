@@ -1,0 +1,24 @@
+.container {
+  margin-top: 5%;
+}
+.form-group label {
+  color: white;
+}
+.body1 {
+  background-attachment: fixed;
+  
+  background: url("QuoraHd.png") no-repeat;
+  background-size: cover;
+}
+
+.back-img {
+  max-width: 100%;
+  margin-top: 35%;
+  margin-left: 20%;
+}
+.validation-color {
+  color: red;
+}
+#form-img {
+  background-repeat: no-repeat;
+}

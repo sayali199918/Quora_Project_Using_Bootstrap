@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fstyle.css">
+    <script type="text/javascript">
+        
+        function validate() {
+        var username = document.getElementById("username"); 
+        var password = document.getElementById("Password");   
+        
+        if (username.value.trim() == "") {
+          //alert("Blank Username");
+          username.style.border = "solid 2px red";
+          document.getElementById("label1").style.visibility = "visible";
+          return false;
+
+
+        } else if (password.value.trim() == "") {
+          //alert("Blank password");
+          password.style.border = "solid 2px red";
+          document.getElementById("label2").style.visibility = "visible";
+          return false;
+
+
+        } else if (password.value.trim().length < 5) {
+          //alert("Password is too short");
+          password.style.border = "solid 2px red";
+          document.getElementById("label2").style.visibility ="visible";
+          document.getElementById("label2").innerHTML = "Password is short";
+          return false;
+
+        } else if (regexpassword.test(passwordcheck)==false) {
+          //alert("Password is not match specification");
+          password.style.border = "solid 2px red";
+          document.getElementById("label2").style.visibility ="visible";
+          document.getElementById("label2").innerHTML = "Enter valid password";
+          return false;
+
+        }
+        else
+        {
+          return true;
+        }
+      }
+        
+        
+        
+        </script>
+</head>
+<body class="bodys">
+    
+    
+        <form class="xyz" onsubmit="return validate()" action="Quora.html">
+            
+    
+    <div class="abc">
+        <h1 style="color:brown;">Login Page</h1>   
+            <input type="text" id="username" placeholder="Username" />
+            <label id="label1" style="color: red; visibility: hidden"
+              >Invalid Username</label
+            >
+            <br /><br />
+            <input type="password" id="Password" placeholder="Password" />
+            <label id="label2" style="color: red; visibility: hidden"     
+              >Invalid Password</label><br><br>
+              
+              <button type="Login">Login</button>
+    <a href="Registration_Form.html" target ="_blank"><input type="button" value="Register"></a>
+</form>
+
+</div>
+
+</body>
+</html>  
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fstyle.css">
+</head>
+<script type="text/javascript">
+function validate()
+{
+    var usernmae=document.getElementById("uname");
+    var password=document.getElementById("pass");
+
+    if(usernmae.value.trim() =="" || password.value.trim()=="")
+    {
+        alert("no blank value allowed");
+        return false;
+    }
+    else{
+        true;
+
+    }
+
+}
+
+
+
+</script>
+<body>
+    <form class="xyz"
+     onsubmit="return validate()">
+     <h1 style="color:brown;">Login Page</h1>   
+     <div class="abc">
+        <input id="uname" placeholder="username"
+        type="text" required/><br><br>
+
+        <input id="pass" placeholder=password"
+        type="password" required/><br><br>
+
+        <a href="Registration_Form.html" target ="_blank"><input type="button" value="Register"></a>
+
+
+
+
+
+
+</form>
+</div>
+</body>
+</html>  -->

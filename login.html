@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="javascript_N.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="header d-flex">
+      <a href="#default" class="logo"> &nbsp; Login here...</a>
+      <div class="header-right">
+        <a class="active" href="Registration.html">Sign Up</a>
+      </div>
+    </div>
+    <br /><br />
+    <div class="login">
+      <form
+        onsubmit="return validate()"
+        id="login"
+        name="login"
+        action="Quora.html"
+      >
+        <label><b style="color: aliceblue">Username</b></label>
+        <input
+          type="text"
+          name="uname"
+          id="uname"
+          placeholder="Username"
+        /><span
+          style="color: red; font-size: 15px; font-weight: 500"
+          id="ename"
+        ></span>
+        <br /><br />
+        <label><b style="color: aliceblue">Password</b></label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Password"
+        /><span
+          style="color: red; font-size: 15px; font-weight: 500"
+          id="epass"
+        ></span>
+        <br /><br />
+        <input
+          type="submit"
+          name="log"
+          id="log"
+          value="Log In Here"
+         
+        />
+        <br /><br />
+        <!-- <input type="checkbox" id="check">
+      <span>Remember me</span> -->
+        <br />
+        <a style="color: aliceblue" href="#">Forgot Password?</a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="rstyle.css">
+    <script type="text/javascript">
+        function validate() {
+       var mobileno = document.getElementById("mobileno");
+       var emailid = document.getElementById("emailid");
+
+       var mobilenocheck = document.getElementById("mobileno").value; ///for mobile no. specification
+        var regexmobile =/^[6-9][0-9]{9}$/;
+
+        var emailidcheck = document.getElementById("emailid").value; ///for Emailid specification
+        var regexemailid =/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+).([a-z]{2,20})$/;
+
+        if (mobileno.value.trim() == "") {
+          //alert("Blank password");
+          mobileno.style.border = "solid 2px red";
+          document.getElementById("label3").style.visibility = "visible";
+          return false;
+
+        } 
+        else if (regexmobile.test(mobilenocheck)==false) {
+          //alert("Invalid Mobile no");
+          mobileno.style.border = "solid 2px red";
+          document.getElementById("label3").style.visibility ="visible";
+          document.getElementById("label3").innerHTML = "Invalid Mobile no.";
+          return false;
+
+        }
+        else if (emailid.value.trim() == "") {
+          //alert("Blank password");
+          emailid.style.border = "solid 2px red";
+          document.getElementById("label4").style.visibility = "visible";
+          return false;
+
+        } 
+        else if (regexemailid.test(emailidcheck)==false) {
+          //alert("Invalid Email id");
+          emailid.style.border = "solid 2px red";
+          document.getElementById("label4").style.visibility ="visible";
+          document.getElementById("label4").innerHTML = "Invalid Email ID";
+          return false;
+
+        }
+        else
+        {
+          return true;
+        }
+      }
+    </script>
+
+</head>
+<body class="body1">
+    <form class="formm"  onsubmit="return validate()" action="Front.html">
+    <div >
+    <H1 class="heading"> Sign Up </H1>
+    <lable for ="name">Name </lable>
+    <input type="text" id = "name" name = "Myname" class="abc" placeholder="Enter Name" ><br><br>
+
+    <lable for ="surname">Surname </lable>
+    <input type="text" id = "surname" name = "Mysurname" class="abc" placeholder="Enter surname" ><br><br>
+
+    <lable for ="Mob">Mob </lable>
+    <input type="text" placeholder="Mobile no." id="mobileno" class="abc">
+        <label id="label3" style="color: red; visibility: hidden;">Invalid mobile no.</label>
+        <br><br>
+
+        <lable for ="Email">Email </lable>
+        <input type="text" placeholder="Email ID" id="emailid" class="abc">
+        <label id="label4" style="color: red; visibility: hidden;">Invalid Email ID</label>
+        <br><br>
+
+    <lable for ="Dob">Date of Birth</lable>
+    <input type="date" id = "Dob" name = "Mydob"  class="abc" placeholder="Enter Date of Birth"><br><br>
+
+    <lable for ="City">City</lable>
+    <input type="text" id = "City" name = "Mycity" class="abc" placeholder="Enter City" ><br><br>
+
+    <lable for ="Pin">Pincode</lable>
+    <input type="text" id = "Pin" name = "Mypin" class="abc" placeholder="Enter pin" ><br><br>
+
+    <lable for ="Add">Address</lable>
+    <input type="textarea" id = "Add" name = "Myadd" class="abc" placeholder="Enter Address"><br><br>
+
+    <button type="Register">Register</button>
+
+</div><br>
+<a href="Front.html" target ="_blank"><input type="button" value="Login"></a>
+    </form>
+
+</body>
+</html>
